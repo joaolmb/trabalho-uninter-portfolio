@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato</title>
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+    <nav>
+        <!-- Barra de navegação com os links para páginas -->
+        <ul class="navbar">
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="experiencia.html">Formação e experiências</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Entre em contato</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="form-container">
+            <h2>Formulário de Contato</h2>
+            <form id="contactForm">
+                <div class="form-group" id="nameGroup">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="nameError"></div>
+                </div>
+
+                <div class="form-group" id="emailGroup">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-group" id="phoneGroup">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="^\d{4,5}-\d{4}$"
+                        placeholder="Formato: 99999-9999" required>
+                    <div class="error-message" id="phoneError"></div>
+                </div>
+
+                <div class="form-group" id="messageGroup">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+
+                <!-- Campos adicionais -->
+                <div class="form-group" id="ageGroup">
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" name="age" min="0" max="120">
+                    <div class="error-message" id="ageError"></div>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
